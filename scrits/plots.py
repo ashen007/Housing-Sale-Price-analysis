@@ -37,3 +37,14 @@ def heat_maps(dataframe, x, y, hue, size=(12, 6), savefig=False, path=None, plot
         plt.savefig(plotname, path)
 
     plt.show()
+
+
+def scatter_plots(dataframe, x, y, hue=None, size=None, style=None, figsize=(12, 6), savefig=False, path=None,
+                  plotname='temp-plot.jpg'):
+    plt.figure(figsize=figsize, dpi=300)
+    sns.scatterplot(x=x, y=y, hue=hue, size=size, style=style, data=dataframe, palette='viridis')
+
+    if savefig is True and path is not None:
+        plt.savefig(plotname, path)
+
+    plt.show()
