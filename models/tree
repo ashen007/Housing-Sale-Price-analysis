@@ -1,0 +1,25 @@
+{
+  'node': 1.398428963109975,
+  'feature': 'OverallQual',
+  'left': 10.583079465958827,
+  'right': {
+    'node': 1.4568793942841434,
+    'feature': 'OverallQual',
+    'left': 11.466791082693346,
+    'right': {
+      'node': 1.4917505235608906,
+      'feature': 'OverallQual',
+      'left': 12.05811950150861,
+      'right': {
+        'node': 4.441700107878733,
+        'feature': 'TotalBsmtSF',
+        'left': 12.58645835544266,
+        'right': {
+          'node': 1.226324422691821,
+          'feature': 'GarageCars',
+          'right': 13.027067840075901
+        }
+      }
+    }
+  }
+}
