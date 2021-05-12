@@ -3,12 +3,13 @@ import pandas as pd
 
 
 class RegressionTree:
-    def __init__(self,x, y, max_depth=12, batch_size=5, interval=5):
+    def __init__(self, x, y, max_depth=12, batch_size=5, interval=5):
         self.x = x
         self.y = y
         self.max_depth = max_depth
         self.min_batch = batch_size
         self.interval = interval
+        self.Tree = 0
 
     def threshold(self, x, y):
         thresh = pd.DataFrame(columns=['feature', 'cutoff', 'ssr'])
@@ -48,4 +49,6 @@ class RegressionTree:
         else:
             Tree['right'] = np.mean(rSet[self.y].values)
 
-        return Tree
+        self.Tree = Tree
+
+        return self

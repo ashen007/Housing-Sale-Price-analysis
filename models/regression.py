@@ -24,7 +24,7 @@ class LinearRegression_GD:
             self.cost.append(cost)
 
         self.theta = theta
-        return theta
+        return self
 
     def predict(self, x):
         ones = np.ones([x.shape[0], 1])
