@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>House price predictor</title>
+</head>
+<body>
+
+<form action="{{url_for('main')}}" method="POST">
+    <label for="LotFrontage">Linear feet of street connected to property</label>
+    <input type="number" id="LotFrontage" name="LotFrontage"><br>
+
+    <label for="MasVnrArea">Masonry veneer area in square feet</label><br>
+    <input type="number" id="MasVnrArea" name="MasVnrArea"><br>
+
+    <label for="TotalBsmtSF">Total square feet of basement area</label><br>
+    <input type="number" id="TotalBsmtSF" name="TotalBsmtSF"><br>
+
+    <label for="firstFlrSF">First Floor square feet</label><br>
+    <input type="number" id="firstFlrSF" name="firstFlrSF"><br>
+
+    <label for="GrLivArea">Above grade (ground) living area square feet</label><br>
+    <input type="number" id="GrLivArea" name="GrLivArea"><br>
+
+    <label for="FullBath">Full bathrooms above grade</label><br>
+    <input type="number" id="FullBath" name="FullBath"><br>
+
+    <input type="submit" value="Check">
+</form>
+
+<div class="result" align="center">
+    <p>{{result}}</p>
+</div>
+
+</body>
+</html>
