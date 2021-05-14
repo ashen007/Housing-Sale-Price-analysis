@@ -1,9 +1,10 @@
 import numpy as np
 import pandas as pd
 import pickle
+import joblib
 import flask
 
-with open(f'model/linear_dg.pkl', 'rb') as file:
+with open(f'model/sk_linear_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 app = flask.Flask(__name__, template_folder='template')
