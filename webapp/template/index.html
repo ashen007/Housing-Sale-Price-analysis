@@ -11,77 +11,91 @@
     <fieldset>
         <div id="measures">
             <div class="wrapper">
-                <p>
-                    <label for="LotFrontage"><span>Linear feet of street connected to property</span></label>
-                    <input type="number" id="LotFrontage" name="LotFrontage"><br>
-
-                </p>
-                <p>
-                    <label for="MasVnrArea"><span>Masonry veneer area in square feet</span></label>
-                    <input type="number" id="MasVnrArea" name="MasVnrArea"><br>
-
-                </p>
-                <p>
-                    <label for="TotalBsmtSF"><span>Total square feet of basement area</span></label>
-                    <input type="number" id="TotalBsmtSF" name="TotalBsmtSF"><br>
-
-                </p>
-                <p>
-                    <label for="firstFlrSF"><span>First Floor square feet</span></label>
-                    <input type="number" id="firstFlrSF" name="firstFlrSF"><br>
-
-                </p>
-                <p>
-                    <label for="GrLivArea"><span>Above grade (ground) living area square feet</span></label>
-                    <input type="number" id="GrLivArea" name="GrLivArea"><br>
-
-                </p>
-                <p>
-                    <label for="GarageArea"><span>Size of garage in square feet</span></label>
-                    <input type="number" id="GarageArea" name="GarageArea"><br>
-
-                </p>
+                <h2>Area measures</h2>
+                <div class="container">
+                    <div class="column_1">
+                        <p>
+                            <label for="LotFrontage"><span>Linear feet of street connected to property</span><br>
+                                <input type="number" id="LotFrontage" name="LotFrontage"><br>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="MasVnrArea"><span>Masonry veneer area in square feet</span><br>
+                                <input type="number" id="MasVnrArea" name="MasVnrArea"><br>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="TotalBsmtSF"><span>Total square feet of basement area</span><br>
+                                <input type="number" id="TotalBsmtSF" name="TotalBsmtSF"><br>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="column_2">
+                        <p>
+                            <label for="firstFlrSF"><span>First Floor square feet</span><br>
+                                <input type="number" id="firstFlrSF" name="firstFlrSF"><br>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="GrLivArea"><span>Above grade (ground) living area square feet</span><br>
+                                <input type="number" id="GrLivArea" name="GrLivArea"><br>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="GarageArea"><span>Size of garage in square feet</span><br>
+                                <input type="number" id="GarageArea" name="GarageArea"><br>
+                            </label>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div id="numberOfs">
             <div class="wrapper">
-                <p>
-                    <label for="FullBath"><span>Full bathrooms above grade</span></label>
-                    <input type="number" id="FullBath" name="FullBath"><br>
-
-                </p>
-                <p>
-                    <label for="TotRmsAbvGrd"><span>Total rooms above grade (does not include bathrooms)</span></label>
-                    <input type="number" id="TotRmsAbvGrd" name="TotRmsAbvGrd"><br>
-
-                </p>
-                <p>
-                    <label for="Fireplaces"><span>Number of fireplaces</span></label>
-                    <input type="number" id="Fireplaces" name="Fireplaces"><br>
-
-                </p>
-                <p>
-                    <label for="GarageCars"><span>Size of garage in car capacity</span></label>
-                    <input type="number" id="GarageCars" name="GarageCars"><br>
-
-                </p>
-
-                <p>
-                    <label for="MasVnrType"><span>Masonry veneer type</span></label>
-                    <select id="MasVnrType" name="MasVnrType">
-                        <option value="0.5917808219178082">None</option>
-                        <option value="0.3047945205479452">Brick Face</option>
-                        <option value="0.08767123287671233">Stone</option>
-                        <option value="0.010273972602739725">Brick Common</option>
-                    </select><br>
-
-                </p>
+                <h2>Interior details</h2>
+                <div class="container">
+                    <div class="column_1">
+                        <p>
+                            <label for="FullBath"><span>Full bathrooms above grade</span><br>
+                                <input type="number" id="FullBath" name="FullBath"><br>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="TotRmsAbvGrd"><span>Total rooms above grade (does not include bathrooms)</span><br>
+                                <input type="number" id="TotRmsAbvGrd" name="TotRmsAbvGrd"><br>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="MasVnrType"><span>Masonry veneer type</span>
+                                <select id="MasVnrType" name="MasVnrType" style="margin: 32px 0 0 0;">
+                                    <option value="0.5917808219178082">None</option>
+                                    <option value="0.3047945205479452">Brick Face</option>
+                                    <option value="0.08767123287671233">Stone</option>
+                                    <option value="0.010273972602739725">Brick Common</option>
+                                </select><br>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="column_2">
+                        <p>
+                            <label for="Fireplaces"><span>Number of fireplaces</span><br>
+                                <input type="number" id="Fireplaces" name="Fireplaces"><br>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="GarageCars"><span>Size of garage in car capacity</span><br>
+                                <input type="number" id="GarageCars" name="GarageCars"><br>
+                            </label>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div id="quality">
             <div class="wrapper">
+                <h2>Quality measures</h2>
                 <label for="OverallQual"><span>Rates the overall material and finish of the house</span>
                     <ul id="OverallQual">
                         <li><label>
@@ -257,36 +271,47 @@
 
         <div id="dates">
             <div class="wrapper">
-                <p>
-                    <label for="YearBuilt"><span>Original construction date</span></label>
-                    <input type="number" id="YearBuilt" name="YearBuilt"><br>
-
-                </p>
-                <p>
-                    <label for="YearRemodAdd"><span>Remodel date (same as construction date if no remodeling or additions)</span></label>
-                    <input type="number" id="YearRemodAdd" name="YearRemodAdd"><br>
-
-                </p>
-                <p>
-                    <label for="GarageYrBlt"><span>Year garage was built</span></label>
-                    <input type="number" id="GarageYrBlt" name="GarageYrBlt"><br>
-
-                </p>
-                <p>
-                    <label for="Age"><span>How old the Property (years)</span></label>
-                    <input type="number" id="Age" name="Age"><br>
-
-                </p>
+                <h2>Dates of</h2>
+                <div class="container">
+                    <div class="column_1">
+                        <p>
+                            <label for="YearBuilt"><span>Original construction date</span><br>
+                                <input type="number" id="YearBuilt" name="YearBuilt"><br>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="YearRemodAdd"><span>Remodel date (same as construction date if no remodeling or additions)</span><br>
+                                <input type="number" id="YearRemodAdd" name="YearRemodAdd"><br>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="column_2">
+                        <p>
+                            <label for="GarageYrBlt"><span>Year garage was built</span><br>
+                                <input type="number" id="GarageYrBlt" name="GarageYrBlt"><br>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="Age"><span>How old the Property (years)</span><br>
+                                <input type="number" id="Age" name="Age"><br>
+                            </label>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <input type="submit" value="Check">
+        <div>
+            <div class="wrapper">
+                <input type="submit" value="Check">
+            </div>
+        </div>
     </fieldset>
 </form>
 
 <div class="result" align="center">
-    <p>{{inputs}}</p>
-    <p>{{result}}</p>
+    <h2>Estimated Price</h2>
+    <h2>{{result}}</h2>
 </div>
 
 </body>
